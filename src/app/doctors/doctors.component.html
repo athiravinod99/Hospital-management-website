@@ -1,0 +1,227 @@
+<div>
+  <header class="header">
+      <div>
+          <h1 class="hed">OUR DOCTORS</h1>
+      </div>
+  </header>
+</div>
+
+<div class="container col-xxl-8 px-1 py-3">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="./../../assets/images/docimg.jfif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="900" loading="lazy">
+    </div>
+    <div class="col-lg-6"><br><br><br><br>
+      <p class="lead">DOCCARE has a panel of dedicated and experienced consultants in various specialities to take complete care of you. All referrals to specialists, both inside and outside the Clinic, will be coordinated by your Family Physician, and we will ensure that you get the best and most appropriate specialist for you</p>
+      <!-- <br><div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-primary" (click)="btnClick();">APPOINTMENT</button>
+      </div> -->
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+<!-- chief doctors -->
+<br><br>
+<div>
+  
+  <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="pt-3 border-bottom border-secondary border-2 text-center">OUR CHIEF DOCTORS</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center" fxLayout="row wrap" fxLayoutGap="16px grid">
+       
+          <div class="card m-2" *ngFor="let doctor of doctordisplay">
+            <img class="card-img-top" src="./../../assets/images/imgdoc.jfif" alt="Card image">
+            
+              <div class="my-auto mx-auto text-center">
+                <h3 class="text-danger">{{doctor.DoctorName}}</h3>
+                <h3 class="text-danger">{{doctor.Specialization}}</h3>
+                <h3 class="text-danger">{{doctor.Department}}</h3>
+                <h3 class="text-danger">{{doctor.Time}}</h3>
+                
+                  
+            </div>
+            
+          </div>
+        </div>
+        
+
+   <!-- GYNAEC -->
+
+  <!-- <div class="container" id='gynec'>
+      <div class="row">
+          <div class="col">
+              <h2 class="pt-3 border-bottom border-secondary border-2 text-center">GYNAECOLOGY</h2>
+          </div>
+      </div>
+      <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-12 col-12">
+              <div class="card">
+                  <img class="card-img-top" src="./../../assets/images/imgdoc.jfif" alt="Card image">
+                                
+                  <div class="my-auto mx-auto text-center">
+                      <h3 class="text-danger">Dr. Name</h3>
+                      <h3 class="text-danger">M.B.B.S., M.D. (Gynaec)</h3>
+                      <h3 class="text-danger">CONSULTANT IN GYNAECOLOGY</h3>
+                      <h3 class="text-danger">MONDAY - SATURDAY</h3>
+                      <h3 class="text-danger">2.00 PM - 4.00 PM</h3>
+                                      
+                  </div>
+                                
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-12">
+              <div class="card">
+                  <img class="card-img-top" src="./../../assets/images/imgdoc.jfif" alt="Card image">
+                                
+                      <div class="my-auto mx-auto text-center">
+                          <h3 class="text-danger">Dr. Name</h3>
+                          <h3 class="text-danger">M.B.B.S., M.D. (Gynaec)</h3>
+                          <h3 class="text-danger">CONSULTANT IN GYNAECOLOGY</h3>
+                          <h3 class="text-danger">MONDAY - WEDNESDAY</h3>
+                          <h3 class="text-danger">10.00 PM - 1.00 PM</h3>
+                      </div>
+                                
+              </div>
+          </div>
+              <div class="col-md-4 col-sm-12 col-12">
+                  <div class="card">
+                      <img class="card-img-top" src="./../../assets/images/imgdoc.jfif" alt="Card image">
+                                
+                      <div class="my-auto mx-auto text-center">
+                          <h3 class="text-danger">Dr. Name</h3>
+                          <h3 class="text-danger">M.B.B.S., M.D. (Gynaec)</h3>
+                          <h3 class="text-danger">CONSULTANT IN GYNAECOLOGY</h3>
+                          <h3 class="text-danger">MONDAY - FRIDAY</h3>
+                          <h3 class="text-danger">3.00 PM - 5.00 PM</h3>
+                      </div>
+                                
+                  </div>
+              </div>
+  </div> -->
+
+  <!-- DIABETOLOGY -->
+
+  <!-- <div class="container" id='diabet'>
+      <div class="row">
+          <div class="col">
+              <h2 class="pt-3 border-bottom border-secondary border-2 text-center">DIABETOLOGY</h2>
+          </div>
+      </div>
+      <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-12 col-12">
+              <div class="card">
+                  <img class="card-img-top" src="./../../assets/images/imgdoc.jfif" alt="Card image">
+                            
+                  <div class="my-auto mx-auto text-center">
+                      <h3 class="text-danger">Dr. Name</h3>
+                      <h3 class="text-danger">M.B.B.S., M.H.Sc (Diab.)</h3>
+                      <h3 class="text-danger">DIABETOLOGIST</h3>
+                      <h3 class="text-danger">MONDAY - FRIDAY</h3>
+                      <h3 class="text-danger">9.00 AM-1.00 PM; 4.00 PM-7.00 PM</h3>
+                                  
+                  </div>
+                            
+              </div>
+          </div>
+      </div> -->
+
+
+<!-- ENT -->
+<!-- <div class="container" id='ent'>
+  <div class="row">
+    <div class="col">
+      <h2 class="pt-3 border-bottom border-secondary border-2 text-center">ENT</h2>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4 col-sm-12 col-12">
+      <div class="card">
+        <img class="card-img-top" src="./../../assets/images/imgdoc.jfif" alt="Card image">
+        
+          <div class="my-auto mx-auto text-center">
+            <h3 class="text-danger">Dr. Name</h3>
+            <h3 class="text-danger">M.B.B.S., M.D.</h3>
+            <h3 class="text-danger">CONSULTANT ENT SPECIALIST</h3>
+            <h3 class="text-danger">MONDAY - SATURDAY</h3>
+            <h3 class="text-danger">2.00 PM - 4.00 PM</h3>
+              
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12 col-12">
+      <div class="card">
+        <img class="card-img-top" src="./../../assets/images/imgdoc.jfif" alt="Card image">
+        
+          <div class="my-auto mx-auto text-center">
+            <h3 class="text-danger">Dr. Name</h3>
+            <h3 class="text-danger">M.B.B.S., M.D.</h3>
+            <h3 class="text-danger">CONSULTANT ENT SPECIALIST</h3>
+            <h3 class="text-danger">MONDAY - WEDNESDAY</h3>
+            <h3 class="text-danger">3.00 PM - 4.00 PM</h3>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12 col-12">
+      <div class="card">
+        <img class="card-img-top" src="./../../assets/images/imgdoc.jfif" alt="Card image">
+        
+          <div class="my-auto mx-auto text-center">
+            <h3 class="text-danger">Dr. Name</h3>
+            <h3 class="text-danger">M.B.B.S., M.D.</h3>
+            <h3 class="text-danger">CONSULTANT ENT SPECIALIST</h3>
+            <h3 class="text-danger">MONDAY - SATURDAY</h3>
+            <h3 class="text-danger">BY APPOINTMENT</h3>
+        </div>
+        
+      </div>
+    </div>
+  </div> -->
+
+<!-- PULMONOLOGY -->
+
+<!-- <div class="container" id='pulmo'>
+  <div class="row">
+      <div class="col">
+      <h2 class="pt-3 border-bottom border-secondary border-2 text-center">PULMONOLOGY</h2>
+      </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 col-sm-12 col-12">
+          <div class="card">
+            <img class="card-img-top" src="./../../assets/images/imgdoc.jfif" alt="Card image">
+            
+              <div class="my-auto mx-auto text-center">
+                <h3 class="text-danger">Dr. Name</h3>
+                <h3 class="text-danger">M.B.B.S., M.D.</h3>
+                <h3 class="text-danger">CONSULTANT IN PULMONOLOGY</h3>
+                <h3 class="text-danger">SATURDAY</h3>
+                <h3 class="text-danger">2.00 PM - 4.00 PM</h3>
+                  
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-12">
+          <div class="card">
+            <img class="card-img-top" src="./../../assets/images/imgdoc.jfif" alt="Card image">
+            
+              <div class="my-auto mx-auto text-center">
+                <h3 class="text-danger">Dr. Name</h3>
+                <h3 class="text-danger">M.B.B.S., M.D.</h3>
+                <h3 class="text-danger">CONSULTANT IN PULMONOLOGY</h3>
+                <h3 class="text-danger">MONDAY</h3>
+                <h3 class="text-danger">BY APPOINTMENT ONLY</h3>
+            </div>
+            
+          </div>
+        </div>
+        </div> -->

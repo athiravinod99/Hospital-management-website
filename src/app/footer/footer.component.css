@@ -1,0 +1,62 @@
+
+footer .left{
+    width: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    
+}
+
+footer .demo-bg {
+    opacity: 0.3;
+    width: 100%;
+    height: auto;
+    position: absolute;
+  }
+  .footer-container{
+      width: 60%;
+      margin: 0px auto;
+  }
+.footer-container > div{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+footer ul li{
+    list-style-type: none;
+}
+.demo-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .demo-bg {
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .demo-content {
+    position: relative;
+  }
+.footer-container div h5{
+    font-size: 17px;
+    font-weight: normal;
+    color: black;
+    padding: 10px 0px;
+}
+.footer-container div p{
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+footer .right >div{
+    padding: 18px 0px;
+}
+.footer-container div.logo-footer{
+    width: 100%;
+    padding: 10px 0px;
+}

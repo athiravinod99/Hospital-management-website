@@ -1,0 +1,43 @@
+<div class="center">
+    <!-- <h1>Doctor Login</h1>
+    <form method="post">
+        <div class="txt_field">
+            <input type="text" required>
+            <label>Doctor Id</label>
+        </div>
+        <div class="txt_field">
+            <input type="text" required>
+            <label>Password</label>
+        </div>
+        <div class="pass">Forgot Password?</div>
+        
+        <input type="submit" value="Login">
+         <!-- <div class="signup_link">
+            Not a Member?
+            <a routerLink="signUp">Sign Up</a>
+        </div>  -->
+
+    <!-- </form> --> -->
+
+    <div class="center">
+        <h1>Login For Doctors</h1>
+    
+        <div class="txt_field">
+            <input [(ngModel)]="post.Name" type="text" placeholder="Enter Doctor name">
+            
+        </div>
+        <div class="txt_field">
+            <input [(ngModel)]="post.Pass" type="password" placeholder="Enter Password">
+            
+        </div>
+    
+        
+        <div>
+            <input type="submit" (click)="validate()" value="Login">
+        </div>
+
+
+</div>
+
+
+

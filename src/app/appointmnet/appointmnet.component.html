@@ -1,0 +1,76 @@
+<!-- Appointment Header -->
+<div>
+  <header class="header">
+      <div>
+          <h1 class="hed">Make Your Appointments </h1>
+      </div>
+      <br><div class="d-flex justify-content-right" style="position: relative;">
+        <button type="button" class="btn btn-outline-primary logout-button" (click)="logout();">LOGOUT</button>
+      </div>
+  </header>
+</div>
+
+<!-- Make an Appointment -->
+
+ <body>
+  <div class="container" >
+    <div class="title">Make An Appointment here! </div><br>
+    <div class="content">
+     
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Patient Name</span>
+            <input [(ngModel)]="PatientName" type="text" [value]="PatientName" placeholder="Enter the Patient Name" >
+          </div>
+          &nbsp;
+          <div class="input-box">
+            <span class="details">Patient Age</span>
+            <input [(ngModel)]="post.Age" type="text" placeholder="Enter the Patient Age" required>
+          </div>
+          &nbsp;
+          <div class="input-box">
+            <span class="details">Sex</span>
+            <input [(ngModel)]="post.Sex" type="text" placeholder="Enter the Patient Sex" required>
+          </div>
+          <br>
+          &nbsp;
+
+         
+         <!-- drop down -->
+        
+          <span class="details">Doctor Name &nbsp;</span>
+          <select id="branch" [(ngModel)]="post.DoctorName" >
+              <option selected _ngcontent-oot-c116=""> Select </option>
+              <option  *ngFor="let doctor of  doctordisplay">
+                {{doctor.DoctorName}}
+              </option>
+           </select>
+<br><br>
+          <span class="details">Specialization &nbsp;</span>
+          <select id="branch" [(ngModel)]="post.Specialization" > 
+              <option selected _ngcontent-oot-c116=""> Select </option>
+              <option  *ngFor="let spec of  specOptions">
+                {{spec}}
+              </option>
+           </select>
+
+          <br><br>
+          <div>
+            <h4>Date:
+              <input type="date" [(ngModel)]="post.Time" (ngModelChange)="slot($event)">
+        </h4>
+          </div>
+
+
+        </div>
+        
+        <div class="alert" *ngIf = "count > 4"><p>No Slot Available</p></div>
+        <div class="button">
+          <input type="submit" [disabled]="count > 4" (click)="display()" [ngClass]="{'disabledButton' : count > 4}" 
+          value="Make your Appointment">
+      </div>
+     
+    </div>
+  </div>
+
+</body>

@@ -1,0 +1,92 @@
+.hed{
+
+    color: rgb(15, 15, 15);
+    padding-left: 5cm;
+    text-shadow: 1em;
+    text-decoration: black;
+    text-transform: capitalize;
+}
+.header{
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background: #B1E693;
+  
+}
+h1{
+  font-family: 'Zen Antique Soft', serif;
+}
+
+.btn-btn-outline-success .button{
+    width: 80px;
+    margin-top: 150px;
+    margin-right:16px;
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-lg-6{
+    background-color: aquamarine;
+    height: 400px;
+    text-align: center;
+  } 
+
+  .col-10-col-sm-8-col-lg-6 img{
+    height: 100px;
+  }
+
+  img{
+    height: 400px;
+  }
+
+  .row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* this adds the "card" effect */
+  padding: 8px;
+  text-align: center;
+  background-color: rgb(220, 231, 235);
+  height: 80vh;
+
+  height: 60vh;
+
+  width: 20vw;
+  
+}
+
+.card img{
+  height: 200px;
+}
+
+.container{
+  flex-wrap: wrap;
+}
+
+.content {
+  padding: 16px;
+}
+
+.content > mat-card {
+  width: 200px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: auto;
+}
+
+.card {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: space-around;
+}

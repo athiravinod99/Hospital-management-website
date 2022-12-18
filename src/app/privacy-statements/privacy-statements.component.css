@@ -1,0 +1,31 @@
+
+body{
+    margin: 0;
+
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: rgba(145, 125, 155, 0.486);
+    height: 100vh;
+    overflow: hidden;
+}
+.privacy{
+   background:rgba(138, 150, 155, 0.281) ;
+   
+   padding-right: 3cm;
+   padding-left: 5cm;
+   text-align: left;
+}
+.hed{
+
+    color: white;
+    padding-left: 5cm;
+    text-shadow: 1em;
+    text-decoration: black;
+    text-transform: capitalize;
+}
+.header{
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background: rgb(11, 93, 117);
+  
+}

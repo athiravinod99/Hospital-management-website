@@ -1,0 +1,120 @@
+/* nav img{
+    width: 9em;
+    padding: 3px;
+    height: 4em;
+   
+}
+nav{
+    background-color: #B5DEFF;
+    padding: 10px;
+    height: 5em;
+}
+nav ul{
+    float: right;
+    list-style-type: none;
+}
+ul li{
+   padding: 20px;
+   display: inline-block;
+} 
+button.mat-button{
+    padding-right: 1em;
+    margin: 10em;
+    text-align: right;
+} 
+button.mat-menu-item:hover {
+    background-color: #FF7777;
+  
+} */
+
+
+nav img{
+    width: 9em;
+    padding: 3px;
+    height: 5em;
+   
+}
+nav{
+    background-color: #B5DEFF;
+    padding: 10px;
+    height: 5em;
+}
+nav ul{
+    float: right;
+    list-style-type: none;
+}
+ul li{
+   padding: 20px;
+   display: inline-block;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  button{
+      padding-right: 1em;
+      margin: 1em;
+  }
+
+  header .logo-title-sec{
+    width: 90%;
+    float: left;
+}
+
+.logo-title-sec img{
+    float: left;
+    width: 70px;
+    height: 70px;
+}
+.logo-title-sec h1{
+    font-size: 38px;
+    float: left;
+    padding: 20px 0px;
+}
+
+header .bottom-menu{
+   
+    float: right;
+}
+
+.bottom-menu{
+    position: absolute;
+    top: -6px;
+    right: 6%;
+}
+.bottom-menu ul li a{
+    font-size: 14px;
+    color: #000;
+} 
+.bottom-menu ul li{
+    position: relative;
+}
+.bottom-menu ul .sub-menu{
+    position: absolute;
+    top: 47px;
+    left: 0px;
+    height: 100%;
+    z-index: 9;
+    display: none;
+    background-color: #ccc;
+    transition: all 1s ease-in;
+}
+.bottom-menu ul li:hover .sub-menu{
+    display: block;
+    transition: all 1s ease-in;
+}
+.sub-menu p{
+    margin: 0px;
+    padding: 0px 5px;
+    font-size: 14px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+
+}
+
+a{
+    font-size: 14px;
+    color: #000;
+    right: 10%;
+}

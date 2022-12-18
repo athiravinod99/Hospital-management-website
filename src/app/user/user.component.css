@@ -1,0 +1,41 @@
+.header{
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background: #B1E693;
+   
+  
+}
+h1,h2{
+  font-family: 'Zen Antique Soft', serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+ .header a{
+   padding-right: 2em;
+ }
+
+/* h2{
+  margin-top: 70%;
+} */
+
+mat-expansion-panel{
+  width: 50vw;
+  margin: auto;
+  margin-top: 10vh;
+  /* text-align: center; */
+}
+
+.logout-button{
+  position: absolute;
+  right: 30px;
+  top: -60px;
+  z-index: 3;
+}
+.appointment-single-item{
+  border-bottom: 1px solid;
+}
+
+.prescription-single-item{
+  border-bottom: 1px solid;
+}

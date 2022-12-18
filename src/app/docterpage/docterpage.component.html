@@ -1,0 +1,109 @@
+<div>
+    <header class="header">
+        <div>
+            <h1 class="hed">Welcome {{userdisplay1[0].DoctorName}}  </h1>
+        </div>
+        <br><div class="d-flex justify-content-right" style="position: relative;">
+          <button type="button" class="btn btn-outline-primary logout-button" (click)="logout();">LOGOUT</button>
+        </div>
+    </header>
+  </div>
+
+  <!-- Add a Prescription -->
+
+ 
+
+<body>
+  <div class="container" >
+    <div class="title">Add a Prescription </div>
+    <div class="content">
+     
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Patient Name</span>
+            <input [(ngModel)]="post.PatientName" type="text" placeholder="Enter the Patient Name" >
+          </div>
+          <div class="input-box">
+            <span class="details">Patient Age</span>
+            <input [(ngModel)]="post.Age" type="text" placeholder="Enter the Patient Age" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Doctor Name</span>
+            <input [(ngModel)]="DoctorName" type="text" placeholder="Enter the Doctor Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Prescription</span>
+            <input  [(ngModel)]="post.PrescriptionDetails" type="text" placeholder="Enter the Prescription details" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Date</span>
+            <input [(ngModel)]="post.Date" type="date" placeholder="Enter date" required>
+          </div>
+         
+        </div>
+        
+        <div class="button">
+          <input type="submit" (click)="display()" value="Add Prescription">
+        </div>
+     
+    </div>
+  </div>
+
+</body>
+
+<!-- Appointment details -->
+
+  <br>
+<div>
+  <h2>Upcoming Appointments</h2>
+</div>
+
+<mat-accordion class="example-headers-align">
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        YOUR UPCOMING APPOINTMENTS
+      </mat-panel-title>
+      
+    </mat-expansion-panel-header>
+    <div class="Expansion" *ngFor="let Prescription of  userdisplay1">
+      PatientName:{{Prescription.PatientName}}<br>
+         Age : {{Prescription.Age}}<br>
+         Sex : {{Prescription.Sex}}<br>
+         Doctor : {{Prescription.DoctorName}}<br>
+         Specialization : {{Prescription.Specialization}}<br>
+          Date & Time : {{Prescription.Time}}<br>
+        
+          
+    </div>
+    
+  </mat-expansion-panel>
+
+</mat-accordion>
+
+<!-- Prescription Details -->
+<br>
+<div>
+  <h2>Prescription Details</h2>
+</div>
+
+<mat-accordion class="example-headers-align">
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        YOUR PRESCRIPTIONS
+      </mat-panel-title>
+      
+    </mat-expansion-panel-header>
+    <div class="Expansion" *ngFor="let Prescription of  userdisplay">
+      Patient Name:{{Prescription.PatientName}}<br>
+         Age : {{Prescription.Age}}<br>
+         Doctor : {{Prescription.DoctorName}}<br>
+         Prescription Details : {{Prescription.PrescriptionDetails}}<br>
+         Date : {{Prescription.Date}}<br>
+          
+    </div>
+    
+  </mat-expansion-panel>
+
+</mat-accordion>

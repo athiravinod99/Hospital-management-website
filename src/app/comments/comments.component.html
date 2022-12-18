@@ -1,0 +1,41 @@
+<div>
+    <header class="header">
+        <div>
+            <h1 class="hed">Your Comments</h1>
+        </div>
+    </header>
+  </div>
+  
+  <body>
+    <div class="container" >
+      <div class="title">Give your feedback here! </div><br>
+      <div class="content">
+       
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Name</span>
+              <input [(ngModel)]="post.Name" type="text" placeholder="Enter Your Name" >
+            </div>
+            &nbsp;
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input [(ngModel)]="post.Email" type="text" placeholder="Enter Email" required>
+            </div>
+            &nbsp;
+            <div class="input-box">
+              <span class="details">Comments</span>
+              <input [(ngModel)]="post.Comments" type="text" placeholder="Enter Comments" required>
+            </div>
+            <br>
+            &nbsp;
+  
+          
+         
+          <div class="button">
+            <input type="submit" (click)="display()" value="Submit">
+        </div>
+       
+      </div>
+    </div>
+  
+  

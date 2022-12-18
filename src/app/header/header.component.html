@@ -1,0 +1,83 @@
+<!-- 
+<nav>
+  <img src="assets/images/logo.png" alt="imag">
+    
+        <button mat-button [matMenuTriggerFor]="menu1">Home</button>
+        <mat-menu #menu1="matMenu">
+          <button mat-menu-item  routerLink="about">About Us</button>
+          <button mat-menu-item  routerLink="why">Why DocCare ?</button>
+        </mat-menu>
+   
+    
+        <button mat-button [matMenuTriggerFor]="menu2">Medical</button>
+        <mat-menu #menu2="matMenu">
+          <button mat-menu-item routerLink="departments">Departments</button>
+          <button mat-menu-item  routerLink="medservice">Services</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="menu3">Policies</button>
+        <mat-menu #menu3="matMenu">
+          <button mat-menu-item routerLink="Privacy">Privacy Statements</button>
+          <button mat-menu-item routerLink="Terms">Terms and Conditions</button>
+        </mat-menu>
+
+        <ul>
+            <li> <a routerLink="login">Login</a></li>
+            <li> <a routerLink="signUp">Sign Up</a></li>
+        </ul>
+
+</nav>
+    
+    
+ -->
+
+
+ 
+
+<mat-toolbar class="header" color="Primary" fixed="top">
+  <div class="logo-title-sec">
+    <img src="assets/images/logo.png" alt="imag">
+    <h1>DOC CARE</h1>
+   
+
+      
+
+  </div>
+  <div class="bottom-menu">
+    <ul>
+        <li>
+          <a href="/home">HOME</a>
+          <div class="sub-menu">
+            <p routerLink="about">About US</p>
+            <p routerLink="why">Why Doc Care?</p>
+          </div>
+        </li>
+        <li>
+          <a href="/departments">MEDICAL</a>
+          <div class="sub-menu">
+            <p routerLink="departments">Departments</p>
+            <p routerLink="medservice">Services</p>
+          </div>
+        </li>
+        <li><a href="/Privacy">POLICIES</a>
+          <div class="sub-menu">
+            <p routerLink="Privacy">Privacy Statement</p>
+            <p routerLink="Terms">Terms and Conditions</p>
+          </div></li>
+
+          <li><a href="/login">LOGIN</a>
+            <div class="sub-menu">
+              <p routerLink="login">Patient Login</p>
+              <p routerLink="doclogin">Doctor Login</p>
+            </div></li>
+
+            <li><a href="/signUp">SIGNUP</a>
+              <div class="sub-menu">
+                <p routerLink="signUp">Patient signUp</p>
+                <p routerLink="docsignup">Doctor signUp</p>
+              </div></li>
+        
+    </ul>
+    </div>
+    
+  </mat-toolbar>

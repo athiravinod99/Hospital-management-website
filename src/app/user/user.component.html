@@ -1,0 +1,67 @@
+<!-- Header -->
+<div >
+    <header class="header">
+        <div>
+            <h1 class="hed">Welcome {{userdisplay[0].PatientName}} </h1>
+            
+        </div>
+        <br><div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-primary" (click)="btnClick();">MAKE AN APPOINTMENT</button>
+        </div>
+        <br><div class="d-flex justify-content-right" style="position: relative;">
+          <button type="button" class="btn btn-outline-primary logout-button" (click)="logout();">LOGOUT</button>
+        </div>
+    </header>
+  </div>
+
+
+  <mat-accordion class="example-headers-align">
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          YOUR UPCOMING APPOINTMENTS
+        </mat-panel-title>
+        
+      </mat-expansion-panel-header>
+      <div class="appointment-single-item" *ngFor="let Appointment of  userdisplay">
+        PatientName:{{Appointment.PatientName}}<br>
+          Age : {{Appointment.Age}}<br>
+          Sex : {{Appointment.Sex}}<br>
+          Doctor : {{Appointment.DoctorName}}<br>
+          Specialization : {{Appointment.Specialization}}<br>
+           Date & Time : {{Appointment.Time}}<br>
+           <!-- <div class="button">
+            <input type="submit" (click)="cancel()" value="Cancel Appointment">
+            </div> -->
+      </div>
+      
+    </mat-expansion-panel>
+  
+  </mat-accordion>
+
+  <!-- Prescription Details -->
+  <br>
+<div>
+  <h2>Prescription Details</h2>
+</div>
+
+<mat-accordion class="example-headers-align">
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        YOUR PRESCRIPTIONS
+      </mat-panel-title>
+      
+    </mat-expansion-panel-header>
+    <div class="prescription-single-item" *ngFor="let Prescription of  userdisplay1">
+      Patient Name:{{Prescription.PatientName}}<br>
+         Age : {{Prescription.Age}}<br>
+         Doctor : {{Prescription.DoctorName}}<br>
+         Prescription Details : {{Prescription.PrescriptionDetails}}<br>
+         Date : {{Prescription.Date}}<br>
+          
+    </div>
+    
+  </mat-expansion-panel>
+
+</mat-accordion>
